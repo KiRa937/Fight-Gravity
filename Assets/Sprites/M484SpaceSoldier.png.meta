@@ -1,0 +1,885 @@
+fileFormatVersion: 2
+guid: 00c856c2cd059aa4e8dbf4fb40a8d41d
+timeCreated: 1511908800
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: M484SpaceSoldier_0
+    21300002: M484SpaceSoldier_1
+    21300004: M484SpaceSoldier_2
+    21300006: M484SpaceSoldier_3
+    21300008: M484SpaceSoldier_4
+    21300010: M484SpaceSoldier_5
+    21300012: M484SpaceSoldier_6
+    21300014: M484SpaceSoldier_7
+    21300016: M484SpaceSoldier_10
+    21300018: M484SpaceSoldier_11
+    21300020: M484SpaceSoldier_12
+    21300022: M484SpaceSoldier_13
+    21300024: M484SpaceSoldier_14
+    21300026: M484SpaceSoldier_15
+    21300028: M484SpaceSoldier_16
+    21300030: M484SpaceSoldier_17
+    21300032: M484SpaceSoldier_20
+    21300034: M484SpaceSoldier_21
+    21300036: M484SpaceSoldier_22
+    21300038: M484SpaceSoldier_23
+    21300040: M484SpaceSoldier_24
+    21300042: M484SpaceSoldier_25
+    21300044: M484SpaceSoldier_26
+    21300046: M484SpaceSoldier_27
+    21300048: M484SpaceSoldier_50
+    21300050: M484SpaceSoldier_70
+    21300052: M484SpaceSoldier_71
+    21300054: M484SpaceSoldier_72
+    21300056: M484SpaceSoldier_73
+    21300058: M484SpaceSoldier_74
+    21300060: M484SpaceSoldier_75
+    21300062: M484SpaceSoldier_76
+    21300064: M484SpaceSoldier_77
+    21300066: M484SpaceSoldier_80
+    21300068: M484SpaceSoldier_81
+    21300070: M484SpaceSoldier_82
+    21300072: M484SpaceSoldier_83
+    21300074: M484SpaceSoldier_84
+    21300076: M484SpaceSoldier_85
+    21300078: M484SpaceSoldier_86
+    21300080: M484SpaceSoldier_87
+    21300082: M484SpaceSoldier_90
+    21300084: M484SpaceSoldier_91
+    21300086: M484SpaceSoldier_92
+    21300088: M484SpaceSoldier_93
+    21300090: M484SpaceSoldier_94
+    21300092: M484SpaceSoldier_95
+    21300094: M484SpaceSoldier_96
+    21300096: M484SpaceSoldier_97
+    21300098: M484SpaceSoldier_8
+    21300100: M484SpaceSoldier_9
+    21300102: M484SpaceSoldier_18
+    21300104: M484SpaceSoldier_19
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 3
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: M484SpaceSoldier_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 520
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 520
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 519
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 519
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 520
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_5
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 519
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_6
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 519
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_7
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 519
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 464
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_11
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 464
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_12
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 464
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_13
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 464
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_14
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 464
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_15
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 464
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_16
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 464
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_17
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 464
+        width: 50
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_20
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_21
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_23
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_24
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_25
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_26
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_27
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 407
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_50
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 260
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_70
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 130
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_71
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 130
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_72
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 130
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_73
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 130
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_74
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 130
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_75
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 130
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_76
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 130
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_77
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 130
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_80
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 74
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_81
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 74
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_82
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 74
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_83
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 74
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_84
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 74
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_85
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 74
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_86
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 74
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_87
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 74
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_90
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 18
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_91
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 18
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_92
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 18
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_93
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 18
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_94
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 18
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_95
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 18
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_96
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 18
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_97
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 18
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_8
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 324
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_9
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 324
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_18
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 322
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: M484SpaceSoldier_19
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 322
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
