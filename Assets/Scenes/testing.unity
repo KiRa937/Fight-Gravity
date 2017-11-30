@@ -874,10 +874,11 @@ AudioSource:
   m_GameObject: {fileID: 723522815}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243640910797838766, guid: 8dc4027483f1ab041a910ae12585ba39,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 69ba0fbf33bee9648bf94c18e1519cc1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3134,11 +3135,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4133674923290894, guid: 5b1475a36d7ab1a4a8126b0f3bc6752d, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.913828
+      value: 0.9138281
       objectReference: {fileID: 0}
     - target: {fileID: 4133674923290894, guid: 5b1475a36d7ab1a4a8126b0f3bc6752d, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.40610135
+      value: 0.40610138
       objectReference: {fileID: 0}
     - target: {fileID: 4133674923290894, guid: 5b1475a36d7ab1a4a8126b0f3bc6752d, type: 2}
       propertyPath: m_RootOrder
