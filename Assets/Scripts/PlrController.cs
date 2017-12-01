@@ -65,6 +65,11 @@ public class PlrController : NetworkBehaviour
 
     //private GameController controller;
 
+    public override void OnStartLocalPlayer()
+    {
+        GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
     // Use this for initialization
     void Start()
     {
@@ -228,9 +233,8 @@ public class PlrController : NetworkBehaviour
     [ClientRpc]
     void RpcPlayWeapon(GameObject plr)
     {
-            plr.GetComponent<AudioSource>().clip = plr.GetComponent<PlrController>().curWeapon.shotAudio;
-            plr.GetComponent<AudioSource>().Play();
-            Debug.Log("Someone's shooting!!");
+        plr.GetComponent<AudioSource>().clip = plr.GetComponent<PlrController>().curWeapon.shotAudio;
+        plr.GetComponent<AudioSource>().Play();
     }
 
     void TurnCharacter(Vector3 mouse)
