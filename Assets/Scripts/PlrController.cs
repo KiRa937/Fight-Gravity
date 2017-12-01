@@ -16,7 +16,7 @@ public class PlrController : NetworkBehaviour
     private int curHealth;
     void OnChangeHealth(int curHealth)
     {
-        healthText.text = "Health: " + curHealth;
+        //healthText.text = "Health: " + curHealth;
         healthSlider.value = curHealth;
     }
 
