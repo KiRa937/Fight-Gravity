@@ -8,7 +8,7 @@ public class PlanetController : MonoBehaviour
     public float gravityForce = 1;
 
     public bool foundation = false;
-    public float maxDegrees = 6;
+    public float maxDegrees = 2;
 
     // Use this for initialization
     void Start()
