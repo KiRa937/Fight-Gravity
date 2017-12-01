@@ -46,6 +46,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1715948077644688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4838668403135924}
+  - component: {fileID: 81502875384432520}
+  m_Layer: 8
+  m_Name: PlayerListener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1796087212349726
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,7 +73,6 @@ GameObject:
   - component: {fileID: 20347693917650108}
   - component: {fileID: 92787066910058566}
   - component: {fileID: 124177066159664606}
-  - component: {fileID: 81395786656502734}
   m_Layer: 5
   m_Name: PlayerCam
   m_TagString: Player
@@ -118,6 +133,7 @@ Transform:
   m_Children:
   - {fileID: 4645545938827616}
   - {fileID: 224276003351707204}
+  - {fileID: 4838668403135924}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -133,6 +149,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4108939574731128}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4838668403135924
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715948077644688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4108939574731128}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &20347693917650108
 Camera:
@@ -215,12 +244,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.59, y: 0.93}
   m_EdgeRadius: 0
---- !u!81 &81395786656502734
+--- !u!81 &81502875384432520
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1796087212349726}
+  m_GameObject: {fileID: 1715948077644688}
   m_Enabled: 1
 --- !u!82 &82620781457543806
 AudioSource:
@@ -245,7 +274,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -253,26 +282,38 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 0
+      time: 0.125
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -8.0032
+      outSlope: -8.0032
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.19805145
+      value: 0.5860901
+      inSlope: -2.0008
+      outSlope: -2.0008
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.45129395
+      value: 0.18304443
+      inSlope: -0.5002
+      outSlope: -0.5002
       tangentMode: 0
     - serializedVersion: 2
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.12505
+      outSlope: -0.12505
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -351,6 +392,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   plrCam: {fileID: 1796087212349726}
+  plrListen: {fileID: 1715948077644688}
 --- !u!114 &114420708200896076
 MonoBehaviour:
   m_ObjectHideFlags: 1

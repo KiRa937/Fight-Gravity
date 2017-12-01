@@ -54,6 +54,8 @@ public class PlrController : NetworkBehaviour
     public GameObject plrCam;
     private GameObject thisCam;
 
+    public GameObject plrListen;
+
     private NetworkStartPosition[] spawnPoints;
 
     public WeaponSpecs curWeapon;
@@ -100,6 +102,8 @@ public class PlrController : NetworkBehaviour
         if (!isLocalPlayer)
         {
             plrCam.gameObject.SetActive(false);
+            //GetComponent<AudioListener>().enabled = false;
+            plrListen.gameObject.SetActive(false);
 
             //if (this.GetComponent<NetworkView>().isMine == false)
             //Destroy(GetComponentInChildren<Camera>());
@@ -168,7 +172,7 @@ public class PlrController : NetworkBehaviour
         if (Input.GetButton("Fire1") && cdTimer > curWeapon.cooldown)
         {
             GetComponent<AudioSource>().clip = curWeapon.shotAudio;
-            CmdFireWeapon(/*transform.position,*/ mouseDir, this.gameObject);
+            CmdFireWeapon(mouseDir, this.gameObject);
             myRigidbody.AddForce(-mouseDir * curWeapon.recoil);
             cdTimer = 0;
         }
@@ -181,7 +185,7 @@ public class PlrController : NetworkBehaviour
     }
 
     [Command]
-    void CmdFireWeapon(/*Vector3 playerPos,*/ Vector3 mouseFireDir, GameObject plr)
+    void CmdFireWeapon(Vector3 mouseFireDir, GameObject plr)
     {
         const float wpnRadius = 0.4f;
 
@@ -189,7 +193,8 @@ public class PlrController : NetworkBehaviour
 
         //plr.GetComponent<AudioSource>().Play();        
 
-        RpcPlayWeapon(plr);
+        if (!plr.GetComponent<AudioSource>().isPlaying)
+            RpcPlayWeapon(plr);
 
         GameObject bul = Instantiate(curWeapon.ammo, playerPos + mouseFireDir * wpnRadius, Quaternion.FromToRotation(Vector2.right, mouseFireDir));
         bul.GetComponent<Rigidbody2D>().velocity = mouseFireDir * curWeapon.bulletSpeed;
@@ -223,8 +228,9 @@ public class PlrController : NetworkBehaviour
     [ClientRpc]
     void RpcPlayWeapon(GameObject plr)
     {
-        if(!plr.GetComponent<AudioSource>().isPlaying)
-        plr.GetComponent<AudioSource>().Play();
+            plr.GetComponent<AudioSource>().clip = plr.GetComponent<PlrController>().curWeapon.shotAudio;
+            plr.GetComponent<AudioSource>().Play();
+            Debug.Log("Someone's shooting!!");
     }
 
     void TurnCharacter(Vector3 mouse)
@@ -236,70 +242,22 @@ public class PlrController : NetworkBehaviour
             GetComponent<SpriteRenderer>().flipX = true;
 
         CmdTurnChar(GetComponent<SpriteRenderer>().flipX, this.gameObject);
-        
-    }
 
-     [Command]
-     void CmdTurnChar(bool flip, GameObject plr)
-     {
-         plr.GetComponent<SpriteRenderer>().flipX = flip;
-
-         RpcTurnChar(flip, plr);
-     }
-     
-     [ClientRpc]
-     void RpcTurnChar(bool flip, GameObject plr)
-     {
-         plr.GetComponent<SpriteRenderer>().flipX = flip;
-     }
-
-    /*[Command]
-    void CmdFireShotgun(Vector3 playerPos, Vector3 mouseFireDir, GameObject plr)
-    {
-        const float bulletSpeed = 10;
-        const float timeToLive = 1.5f;
-
-
-        Quaternion shootRot = Quaternion.Euler(0, 0, 20);
-        GameObject bul = Instantiate(bullet, playerPos + mouseFireDir * 0.3f, Quaternion.FromToRotation(Vector2.up, mouseFireDir));
-        //bul.GetComponent<Rigidbody2D>().AddForce(mouseFireDir * 4);
-        bul.GetComponent<Rigidbody2D>().velocity = mouseFireDir * bulletSpeed;
-        bul.GetComponent<ProjectileController>().shootingPlayer = this.gameObject;
-
-        NetworkServer.Spawn(bul);
-        Destroy(bul, timeToLive);
-
-        bul = Instantiate(bullet, playerPos + shootRot * mouseFireDir * 0.3f, Quaternion.FromToRotation(Vector2.up, shootRot * mouseFireDir));
-        //bul.GetComponent<Rigidbody2D>().AddForce(shootRot * mouseFireDir * 4);
-        bul.GetComponent<Rigidbody2D>().velocity = shootRot * mouseFireDir * bulletSpeed;
-        bul.GetComponent<ProjectileController>().shootingPlayer = this.gameObject;
-
-        NetworkServer.Spawn(bul);
-        Destroy(bul, timeToLive);
-
-        shootRot = Quaternion.Euler(0, 0, -20);
-
-        bul = Instantiate(bullet, playerPos + shootRot * mouseFireDir * 0.3f, Quaternion.FromToRotation(Vector2.up, shootRot * mouseFireDir));
-        //bul.GetComponent<Rigidbody2D>().AddForce(shootRot * mouseFireDir * 4);
-        bul.GetComponent<Rigidbody2D>().velocity = shootRot * mouseFireDir * bulletSpeed;
-        bul.GetComponent<ProjectileController>().shootingPlayer = this.gameObject;
-
-        NetworkServer.Spawn(bul);
-        Destroy(bul, timeToLive);
     }
 
     [Command]
-    void CmdFireRocket(Vector3 playerPos, Vector3 mouseFireDir)
+    void CmdTurnChar(bool flip, GameObject plr)
     {
+        plr.GetComponent<SpriteRenderer>().flipX = flip;
 
-        GameObject bul = Instantiate(projectile, playerPos + mouseFireDir * 0.3f, Quaternion.FromToRotation(Vector2.up, mouseFireDir));
-        //bul.GetComponent<Rigidbody2D>().AddForce(mouseDir * 0.5f);
-        bul.GetComponent<Rigidbody2D>().velocity = mouseFireDir * 7;
-        bul.GetComponent<ProjectileController>().shootingPlayer = this.gameObject;
+        RpcTurnChar(flip, plr);
+    }
 
-        NetworkServer.Spawn(bul);
-        Destroy(bul, 5);
-    }*/
+    [ClientRpc]
+    void RpcTurnChar(bool flip, GameObject plr)
+    {
+        plr.GetComponent<SpriteRenderer>().flipX = flip;
+    }
 
     public void TakeDamage(int dmg, PlrController shotBy)
     {
@@ -313,13 +271,12 @@ public class PlrController : NetworkBehaviour
 
         if (curHealth <= 0)
         {
-            curHealth = maxHealth;
+
+            RpcRespawn();
+
             deaths++;
             shotBy.kills++;
-
-            //GetKilled();
-            RpcRespawn();
-            //Debug.Log("DEAD!");
+            curHealth = maxHealth;
         }
     }
 
