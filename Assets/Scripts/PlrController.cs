@@ -9,6 +9,7 @@ public class PlrController : NetworkBehaviour
     public int maxHealth = 100;
 
     public Text healthText;
+    public Slider healthSlider;
     public Text KDText;
 
     [SyncVar(hook = "OnChangeHealth")]
@@ -16,6 +17,7 @@ public class PlrController : NetworkBehaviour
     void OnChangeHealth(int curHealth)
     {
         healthText.text = "Health: " + curHealth;
+        healthSlider.value = curHealth;
     }
 
     [SyncVar(hook = "OnChangeKills")]
@@ -270,10 +272,11 @@ public class PlrController : NetworkBehaviour
             return;
         }
 
-        curHealth -= dmg;
+        //curHealth -= dmg;
         //Debug.Log(CurHealth);
 
-        if (curHealth <= 0)
+        //if (curHealth <= 0)
+        if(curHealth - dmg <= 0)
         {
 
             RpcRespawn();
@@ -281,6 +284,10 @@ public class PlrController : NetworkBehaviour
             deaths++;
             shotBy.kills++;
             curHealth = maxHealth;
+        }
+        else 
+        {
+            curHealth -= dmg;
         }
     }
 
