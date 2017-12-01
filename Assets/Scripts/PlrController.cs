@@ -312,7 +312,7 @@ public class PlrController : NetworkBehaviour
             //transform.position = new Vector3(10f, 2.5f, 0f);
 
             GameObject expl = Instantiate(explosion, transform.position, transform.rotation);
-            Destroy(expl, .3f);
+            Destroy(expl, .5f);
 
             Vector3 spawnPoint = new Vector3(10f, 2.5f, 0f);
             Quaternion spawnRotation = Quaternion.Euler(0, 0, 0);

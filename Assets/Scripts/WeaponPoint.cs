@@ -20,6 +20,9 @@ public class WeaponPoint : MonoBehaviour
     private AudioClip curAudio;
     private Color baseColor;
 
+    public GameObject weaponShown;
+    public Sprite[] wpnSprites;
+
     // Use this for initialization
     void Start()
     {
@@ -39,6 +42,7 @@ public class WeaponPoint : MonoBehaviour
                     baseColor = Color.yellow;
                     aSrc.clip = audioClips[0];
                     curAudio = audioShotClips[0];
+                    weaponShown.GetComponent<SpriteRenderer>().sprite = wpnSprites[0];
                     break;
                 }
             case Weapons.shotgun:
@@ -48,6 +52,7 @@ public class WeaponPoint : MonoBehaviour
                     baseColor = Color.blue;
                     aSrc.clip = audioClips[1];
                     curAudio = audioShotClips[1];
+                    weaponShown.GetComponent<SpriteRenderer>().sprite = wpnSprites[1];
                     break;
                 }
             case Weapons.flamethrower:
@@ -57,6 +62,7 @@ public class WeaponPoint : MonoBehaviour
                     baseColor = Color.red;
                     aSrc.clip = audioClips[2];
                     curAudio = audioShotClips[2];
+                    weaponShown.GetComponent<SpriteRenderer>().sprite = wpnSprites[2];
                     break;
                 }
             case Weapons.firstAid:
@@ -64,6 +70,7 @@ public class WeaponPoint : MonoBehaviour
                     //ColorUtility.TryParseHtmlString("2C5A34FF", out cl);
                     aSrc.clip = audioClips[3];
                     baseColor = Color.green;
+                    weaponShown.GetComponent<SpriteRenderer>().sprite = wpnSprites[3];
                     break;
                 }
         }
@@ -78,7 +85,13 @@ public class WeaponPoint : MonoBehaviour
         cdTimer += Time.deltaTime;
 
         if (cdTimer >= cooldown)
+        {
             GetComponent<SpriteRenderer>().color = baseColor;
+
+            Color wpnS = Color.white;
+            wpnS.a = 0.5f;
+            weaponShown.GetComponent<SpriteRenderer>().color = wpnS;
+        }
     }
 
     /// <summary>
@@ -104,10 +117,17 @@ public class WeaponPoint : MonoBehaviour
             GetComponent<AudioSource>().Play();
 
             Color dark = GetComponent<SpriteRenderer>().color;
+            dark.r -= .9f;
+            dark.g -= .9f;
+            dark.b -= .9f;
+            GetComponent<SpriteRenderer>().color = dark;
+
+            dark = weaponShown.GetComponent<SpriteRenderer>().color;
             dark.r -= .7f;
             dark.g -= .7f;
             dark.b -= .7f;
-            GetComponent<SpriteRenderer>().color = dark;
+            weaponShown.GetComponent<SpriteRenderer>().color = dark;
+
         }
     }
 
